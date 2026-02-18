@@ -1,38 +1,62 @@
-# Fibrix LLP - ISP & MSO Website
+# Fibrix Broadband - Website
 
-Static website for **fibrixllp.org** - an Internet Service Provider & Multi-System Operator based in South 24 Parganas, West Bengal.
+Official website for **[fibrixllp.org](https://fibrixllp.org)** - Fibrix Broadband, a broadband internet and networking hardware provider based in Joynagar Mojilpur, South 24 Parganas, West Bengal.
+
+**Fibrix Broadband** is the brand name of **Fibrix LLP** (LLP ID: ACT-8822).
 
 ## Pages
 
 | Page | File | Description |
 |------|------|-------------|
 | Home | `index.html` | Hero, services, broadband plans, hardware catalog, CTA |
-| About Us | `about.html` | Company info, mission, vision, values, infrastructure |
-| Contact Us | `contact.html` | Contact form & company details |
-| Pay Bill / Subscribe | `checkout.html` | New connection signup & bill payment |
-| Privacy Policy | `privacy-policy.html` | ISP-specific data & privacy practices |
+| About Us | `about.html` | Company info, team, mission ("Internet for All"), vision, values |
+| Contact Us | `contact.html` | Contact form (Google Form integration) & company details |
+| Privacy Policy | `privacy-policy.html` | Data collection, usage, and privacy practices |
 | Terms & Conditions | `terms.html` | Service terms for broadband & hardware |
 | Refund Policy | `refund-policy.html` | Refund & cancellation for services & hardware |
 
+## Broadband Plans
+
+| Plan | Speed | Price (incl. GST) |
+|------|-------|--------------------|
+| Start 30 | 30 Mbps | Rs.250/month |
+| Connect 40 | 40 Mbps | Rs.330/month |
+| Family 60 | 60 Mbps | Rs.430/month |
+| Power 80 (Most Popular) | 80 Mbps | Rs.520/month |
+| Turbo 100 | 100 Mbps | Rs.600/month |
+
 ## Logos
 
-- **Header:** `Fibrix Logo Style 1.png`
+- **Header / Favicon:** `Fibrix Logo Style 1.png`
 - **Footer:** `Fibrix Logo Style 2.png`
 
-## Deploy to GitHub Pages
+## Contact Form
 
-```bash
-git init
-git add .
-git commit -m "Fibrix LLP website"
-git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO.git
-git push -u origin main
-```
+The contact form submits to a Google Form via `fetch` (no-cors POST). Entry IDs:
 
-Then: **Settings → Pages → Deploy from branch (main) → Save**
+| Website Field | Google Form Entry ID |
+|---------------|----------------------|
+| First Name | `entry.1423676904` |
+| Last Name | `entry.1657985535` |
+| Email Address | `entry.291522330` |
+| Phone Number | `entry.350177398` |
+| Subject | `entry.1065936945` |
+| Message | `entry.1467988090` |
 
-### Custom Domain DNS (at your domain registrar)
+## Payment Portal
+
+Bill payments are handled externally at **[pay.fibrixllp.org](https://pay.fibrixllp.org)**.
+
+## Hosting & Deployment
+
+Hosted on **GitHub Pages** with a custom domain.
+
+- **Repository:** `shourjo-h/fibrixllp.github.io`
+- **Branch:** `main`
+- **Custom domain:** `fibrixllp.org`
+- **CNAME file:** included
+
+### DNS Configuration
 
 **A Records** (for fibrixllp.org):
 ```
@@ -44,19 +68,30 @@ Then: **Settings → Pages → Deploy from branch (main) → Save**
 
 **CNAME** (for www):
 ```
-www → YOUR_USERNAME.github.io
+www -> shourjo-h.github.io
 ```
 
-## Customisation Notes
+## SEO
 
-- **Broadband plans & pricing:** Edit the plan cards in `index.html` and plan dropdown in `checkout.html`
-- **Payment integration:** Checkout form is a UI template - integrate Razorpay/Stripe/PayU for live payments
-- **Contact form:** Integrate with [Formspree](https://formspree.io) or [EmailJS](https://www.emailjs.com) to receive actual emails
-- **Color scheme:** Based on brand color `#c11111` - edit CSS variables in `css/style.css`
+- `robots.txt` - allows all crawlers, points to sitemap
+- `sitemap.xml` - all 6 pages with priorities
+- Open Graph meta tags on all pages for social sharing previews
+
+## Customisation
+
+- **Broadband plans & pricing:** Edit plan cards in `index.html`
+- **Brand color:** `#c11111` - edit CSS variables in `css/style.css`
+- **Contact form:** Update Google Form entry IDs in `contact.html` if form fields change
 
 ## Tech Stack
 
 - Pure HTML5 + CSS3 + vanilla JavaScript
 - Google Fonts (Inter)
-- No build tools or dependencies
-- Fully responsive (mobile, tablet, desktop)
+- GitHub Pages hosting
+- Google Forms backend for contact form
+
+## Team
+
+- **Papia Banerjee** - Partner
+- **Jibesh Mahato** - Partner
+- **Shourjo Banerjee** - Head of Operations
