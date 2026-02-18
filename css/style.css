@@ -67,10 +67,8 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 2rem;
-  min-height: 75px;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding: 0.8rem 2rem;
+  min-height: 110px;
 }
 
 .logo {
