@@ -1,6 +1,6 @@
-# Fibrix LLP — ISP & MSO Website
+# Fibrix LLP - ISP & MSO Website
 
-Static website for **fibrixllp.org** — an Internet Service Provider & Multi-System Operator based in South 24 Parganas, West Bengal.
+Static website for **fibrixllp.org** - an Internet Service Provider & Multi-System Operator based in South 24 Parganas, West Bengal.
 
 ## Pages
 
@@ -50,9 +50,9 @@ www → YOUR_USERNAME.github.io
 ## Customisation Notes
 
 - **Broadband plans & pricing:** Edit the plan cards in `index.html` and plan dropdown in `checkout.html`
-- **Payment integration:** Checkout form is a UI template — integrate Razorpay/Stripe/PayU for live payments
+- **Payment integration:** Checkout form is a UI template - integrate Razorpay/Stripe/PayU for live payments
 - **Contact form:** Integrate with [Formspree](https://formspree.io) or [EmailJS](https://www.emailjs.com) to receive actual emails
-- **Color scheme:** Based on brand color `#c11111` — edit CSS variables in `css/style.css`
+- **Color scheme:** Based on brand color `#c11111` - edit CSS variables in `css/style.css`
 
 ## Tech Stack
 
