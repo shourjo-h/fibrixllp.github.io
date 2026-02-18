@@ -60,6 +60,7 @@ ul {
   top: 0;
   z-index: 1000;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  overflow: visible;
 }
 
 .header .container {
@@ -67,7 +68,9 @@ ul {
   align-items: center;
   justify-content: space-between;
   padding: 0 2rem;
-  height: 75px;
+  min-height: 75px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .logo {
@@ -841,8 +844,8 @@ ul {
   }
 
   .nav-links {
-    position: fixed;
-    top: 75px;
+    position: absolute;
+    top: 100%;
     left: 0;
     right: 0;
     background: var(--white);
