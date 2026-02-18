@@ -116,104 +116,393 @@
     <div class="container">
       <h2 class="section-title">Broadband <span>Plans</span></h2>
       <p class="section-subtitle">Choose the perfect plan for your home or business</p>
-      <div class="plan-grid">
-        <div class="plan-card">
-          <h3>Start 30</h3>
-          <div class="speed">30 <small>Mbps</small></div>
-          <div class="price">₹750 <small>/3 months</small></div>
-          <ul>
-            <li>Unlimited Data (FUP applies)</li>
-            <li>FTTH Connection</li>
-            <li>90-Day Plan</li>
-          </ul>
-          <a href="contact.html" class="btn btn-outline-red" style="width:100%;">Get Connected</a>
-        </div>
-        <div class="plan-card">
-          <h3>OTT + 30</h3>
-          <div class="speed">30 <small>Mbps</small></div>
-          <div class="price">₹550 <small>/month</small></div>
-          <ul>
-            <li>Unlimited Data (FUP applies)</li>
-            <li>FTTH Connection</li>
-            <li>32 OTT Platforms Included</li>
-          </ul>
-          <a href="contact.html" class="btn btn-outline-red" style="width:100%;">Get Connected</a>
-        </div>
-        <div class="plan-card">
-          <h3>Connect 40</h3>
-          <div class="speed">40 <small>Mbps</small></div>
-          <div class="price">₹330 <small>/month</small></div>
-          <ul>
-            <li>Unlimited Data (FUP applies)</li>
-            <li>FTTH Connection</li>
-          </ul>
-          <a href="contact.html" class="btn btn-outline-red" style="width:100%;">Get Connected</a>
-        </div>
-        <div class="plan-card">
-          <h3>Family 60</h3>
-          <div class="speed">60 <small>Mbps</small></div>
-          <div class="price">₹430 <small>/month</small></div>
-          <ul>
-            <li>Unlimited Data (FUP applies)</li>
-            <li>FTTH Connection</li>
-          </ul>
-          <a href="contact.html" class="btn btn-outline-red" style="width:100%;">Get Connected</a>
-        </div>
-        <div class="plan-card">
-          <h3>OTT + 60</h3>
-          <div class="speed">60 <small>Mbps</small></div>
-          <div class="price">₹650 <small>/month</small></div>
-          <ul>
-            <li>Unlimited Data (FUP applies)</li>
-            <li>FTTH Connection</li>
-            <li>32 OTT Platforms Included</li>
-          </ul>
-          <a href="contact.html" class="btn btn-outline-red" style="width:100%;">Get Connected</a>
-        </div>
-        <div class="plan-card popular">
-          <h3>Power 80</h3>
-          <div class="speed">80 <small>Mbps</small></div>
-          <div class="price">₹530 <small>/month</small></div>
-          <ul>
-            <li>Unlimited Data (FUP applies)</li>
-            <li>FTTH Connection</li>
-          </ul>
-          <a href="contact.html" class="btn btn-primary" style="width:100%;">Get Connected</a>
-        </div>
-        <div class="plan-card">
-          <h3>OTT + 80</h3>
-          <div class="speed">80 <small>Mbps</small></div>
-          <div class="price">₹750 <small>/month</small></div>
-          <ul>
-            <li>Unlimited Data (FUP applies)</li>
-            <li>FTTH Connection</li>
-            <li>32 OTT Platforms Included</li>
-          </ul>
-          <a href="contact.html" class="btn btn-outline-red" style="width:100%;">Get Connected</a>
-        </div>
-        <div class="plan-card">
-          <h3>Turbo 100</h3>
-          <div class="speed">100 <small>Mbps</small></div>
-          <div class="price">₹600 <small>/month</small></div>
-          <ul>
-            <li>Unlimited Data (FUP applies)</li>
-            <li>FTTH Connection</li>
-          </ul>
-          <a href="contact.html" class="btn btn-outline-red" style="width:100%;">Get Connected</a>
-        </div>
-        <div class="plan-card">
-          <h3>OTT + 100</h3>
-          <div class="speed">100 <small>Mbps</small></div>
-          <div class="price">₹820 <small>/month</small></div>
-          <ul>
-            <li>Unlimited Data (FUP applies)</li>
-            <li>FTTH Connection</li>
-            <li>32 OTT Platforms Included</li>
-          </ul>
-          <a href="contact.html" class="btn btn-outline-red" style="width:100%;">Get Connected</a>
+
+      <!-- Duration Tabs -->
+      <div class="plan-tabs">
+        <button class="plan-tab active" data-tab="monthly">Monthly</button>
+        <button class="plan-tab" data-tab="quarterly">Quarterly <span class="tab-sub">90 Days</span></button>
+        <button class="plan-tab" data-tab="halfyearly">Half-Yearly <span class="tab-sub">180 Days</span></button>
+        <button class="plan-tab" data-tab="yearly">Yearly <span class="tab-sub">365 Days</span></button>
+      </div>
+
+      <!-- MONTHLY PLANS -->
+      <div class="plan-tab-content active" id="tab-monthly">
+        <div class="plan-grid">
+          <div class="plan-card">
+            <h3>Connect 40</h3>
+            <div class="speed">40 <small>Mbps</small></div>
+            <div class="price">₹330 <small>/month</small></div>
+            <ul>
+              <li>Unlimited Data (FUP applies)</li>
+              <li>FTTH Connection</li>
+            </ul>
+            <a href="contact.html" class="btn btn-outline-red" style="width:100%;">Get Connected</a>
+          </div>
+          <div class="plan-card">
+            <h3>Family 60</h3>
+            <div class="speed">60 <small>Mbps</small></div>
+            <div class="price">₹430 <small>/month</small></div>
+            <ul>
+              <li>Unlimited Data (FUP applies)</li>
+              <li>FTTH Connection</li>
+            </ul>
+            <a href="contact.html" class="btn btn-outline-red" style="width:100%;">Get Connected</a>
+          </div>
+          <div class="plan-card popular">
+            <h3>Power 80</h3>
+            <div class="speed">80 <small>Mbps</small></div>
+            <div class="price">₹530 <small>/month</small></div>
+            <ul>
+              <li>Unlimited Data (FUP applies)</li>
+              <li>FTTH Connection</li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary" style="width:100%;">Get Connected</a>
+          </div>
+          <div class="plan-card">
+            <h3>Turbo 100</h3>
+            <div class="speed">100 <small>Mbps</small></div>
+            <div class="price">₹600 <small>/month</small></div>
+            <ul>
+              <li>Unlimited Data (FUP applies)</li>
+              <li>FTTH Connection</li>
+            </ul>
+            <a href="contact.html" class="btn btn-outline-red" style="width:100%;">Get Connected</a>
+          </div>
+          <div class="plan-card">
+            <h3>OTT + 30</h3>
+            <div class="speed">30 <small>Mbps</small></div>
+            <div class="price">₹550 <small>/month</small></div>
+            <ul>
+              <li>Unlimited Data (FUP applies)</li>
+              <li>FTTH Connection</li>
+              <li>32 OTT Platforms Included</li>
+            </ul>
+            <a href="contact.html" class="btn btn-outline-red" style="width:100%;">Get Connected</a>
+          </div>
+          <div class="plan-card">
+            <h3>OTT + 60</h3>
+            <div class="speed">60 <small>Mbps</small></div>
+            <div class="price">₹650 <small>/month</small></div>
+            <ul>
+              <li>Unlimited Data (FUP applies)</li>
+              <li>FTTH Connection</li>
+              <li>32 OTT Platforms Included</li>
+            </ul>
+            <a href="contact.html" class="btn btn-outline-red" style="width:100%;">Get Connected</a>
+          </div>
+          <div class="plan-card">
+            <h3>OTT + 80</h3>
+            <div class="speed">80 <small>Mbps</small></div>
+            <div class="price">₹750 <small>/month</small></div>
+            <ul>
+              <li>Unlimited Data (FUP applies)</li>
+              <li>FTTH Connection</li>
+              <li>32 OTT Platforms Included</li>
+            </ul>
+            <a href="contact.html" class="btn btn-outline-red" style="width:100%;">Get Connected</a>
+          </div>
+          <div class="plan-card">
+            <h3>OTT + 100</h3>
+            <div class="speed">100 <small>Mbps</small></div>
+            <div class="price">₹820 <small>/month</small></div>
+            <ul>
+              <li>Unlimited Data (FUP applies)</li>
+              <li>FTTH Connection</li>
+              <li>32 OTT Platforms Included</li>
+            </ul>
+            <a href="contact.html" class="btn btn-outline-red" style="width:100%;">Get Connected</a>
+          </div>
         </div>
       </div>
-      <p style="text-align: center; margin-top: 1.5rem; color: var(--text-light); font-size: 0.9rem;">Fair usage policy applies. All prices are inclusive of GST. More durations (3-month, 6-month, yearly) available - <a href="contact.html" style="color: var(--primary);">contact us</a> for details.</p>
+
+      <!-- QUARTERLY PLANS (90 Days) -->
+      <div class="plan-tab-content" id="tab-quarterly">
+        <div class="plan-grid">
+          <div class="plan-card">
+            <h3>Start 30</h3>
+            <div class="speed">30 <small>Mbps</small></div>
+            <div class="price">₹750 <small>/quarter</small></div>
+            <ul>
+              <li>Unlimited Data (FUP applies)</li>
+              <li>FTTH Connection</li>
+              <li>90-Day Plan</li>
+            </ul>
+            <a href="contact.html" class="btn btn-outline-red" style="width:100%;">Get Connected</a>
+          </div>
+          <div class="plan-card">
+            <h3>Connect 40</h3>
+            <div class="speed">40 <small>Mbps</small></div>
+            <div class="price">₹980 <small>/quarter</small></div>
+            <ul>
+              <li>Unlimited Data (FUP applies)</li>
+              <li>FTTH Connection</li>
+              <li>90-Day Plan</li>
+            </ul>
+            <a href="contact.html" class="btn btn-outline-red" style="width:100%;">Get Connected</a>
+          </div>
+          <div class="plan-card">
+            <h3>Family 60</h3>
+            <div class="speed">60 <small>Mbps</small></div>
+            <div class="price">₹1,280 <small>/quarter</small></div>
+            <ul>
+              <li>Unlimited Data (FUP applies)</li>
+              <li>FTTH Connection</li>
+              <li>90-Day Plan</li>
+            </ul>
+            <a href="contact.html" class="btn btn-outline-red" style="width:100%;">Get Connected</a>
+          </div>
+          <div class="plan-card popular">
+            <h3>Power 80</h3>
+            <div class="speed">80 <small>Mbps</small></div>
+            <div class="price">₹1,580 <small>/quarter</small></div>
+            <ul>
+              <li>Unlimited Data (FUP applies)</li>
+              <li>FTTH Connection</li>
+              <li>90-Day Plan</li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary" style="width:100%;">Get Connected</a>
+          </div>
+          <div class="plan-card">
+            <h3>Turbo 100</h3>
+            <div class="speed">100 <small>Mbps</small></div>
+            <div class="price">₹1,750 <small>/quarter</small></div>
+            <ul>
+              <li>Unlimited Data (FUP applies)</li>
+              <li>FTTH Connection</li>
+              <li>90-Day Plan</li>
+            </ul>
+            <a href="contact.html" class="btn btn-outline-red" style="width:100%;">Get Connected</a>
+          </div>
+          <div class="plan-card">
+            <h3>OTT + 40</h3>
+            <div class="speed">40 <small>Mbps</small></div>
+            <div class="price">₹1,640 <small>/quarter</small></div>
+            <ul>
+              <li>Unlimited Data (FUP applies)</li>
+              <li>FTTH Connection</li>
+              <li>32 OTT Platforms Included</li>
+            </ul>
+            <a href="contact.html" class="btn btn-outline-red" style="width:100%;">Get Connected</a>
+          </div>
+          <div class="plan-card">
+            <h3>OTT + 60</h3>
+            <div class="speed">60 <small>Mbps</small></div>
+            <div class="price">₹1,940 <small>/quarter</small></div>
+            <ul>
+              <li>Unlimited Data (FUP applies)</li>
+              <li>FTTH Connection</li>
+              <li>32 OTT Platforms Included</li>
+            </ul>
+            <a href="contact.html" class="btn btn-outline-red" style="width:100%;">Get Connected</a>
+          </div>
+          <div class="plan-card">
+            <h3>OTT + 80</h3>
+            <div class="speed">80 <small>Mbps</small></div>
+            <div class="price">₹2,240 <small>/quarter</small></div>
+            <ul>
+              <li>Unlimited Data (FUP applies)</li>
+              <li>FTTH Connection</li>
+              <li>32 OTT Platforms Included</li>
+            </ul>
+            <a href="contact.html" class="btn btn-outline-red" style="width:100%;">Get Connected</a>
+          </div>
+          <div class="plan-card">
+            <h3>OTT + 100</h3>
+            <div class="speed">100 <small>Mbps</small></div>
+            <div class="price">₹2,410 <small>/quarter</small></div>
+            <ul>
+              <li>Unlimited Data (FUP applies)</li>
+              <li>FTTH Connection</li>
+              <li>32 OTT Platforms Included</li>
+            </ul>
+            <a href="contact.html" class="btn btn-outline-red" style="width:100%;">Get Connected</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- HALF-YEARLY PLANS (180 Days) - OTT Only -->
+      <div class="plan-tab-content" id="tab-halfyearly">
+        <p class="plan-tab-note">All half-yearly plans include 32 OTT platforms</p>
+        <div class="plan-grid">
+          <div class="plan-card">
+            <h3>OTT + 30</h3>
+            <div class="speed">30 <small>Mbps</small></div>
+            <div class="price">₹2,380 <small>/6 months</small></div>
+            <ul>
+              <li>Unlimited Data (FUP applies)</li>
+              <li>FTTH Connection</li>
+              <li>180-Day Plan</li>
+              <li>32 OTT Platforms Included</li>
+            </ul>
+            <a href="contact.html" class="btn btn-outline-red" style="width:100%;">Get Connected</a>
+          </div>
+          <div class="plan-card">
+            <h3>OTT + 40</h3>
+            <div class="speed">40 <small>Mbps</small></div>
+            <div class="price">₹2,840 <small>/6 months</small></div>
+            <ul>
+              <li>Unlimited Data (FUP applies)</li>
+              <li>FTTH Connection</li>
+              <li>180-Day Plan</li>
+              <li>32 OTT Platforms Included</li>
+            </ul>
+            <a href="contact.html" class="btn btn-outline-red" style="width:100%;">Get Connected</a>
+          </div>
+          <div class="plan-card">
+            <h3>OTT + 60</h3>
+            <div class="speed">60 <small>Mbps</small></div>
+            <div class="price">₹3,440 <small>/6 months</small></div>
+            <ul>
+              <li>Unlimited Data (FUP applies)</li>
+              <li>FTTH Connection</li>
+              <li>180-Day Plan</li>
+              <li>32 OTT Platforms Included</li>
+            </ul>
+            <a href="contact.html" class="btn btn-outline-red" style="width:100%;">Get Connected</a>
+          </div>
+          <div class="plan-card popular">
+            <h3>OTT + 80</h3>
+            <div class="speed">80 <small>Mbps</small></div>
+            <div class="price">₹4,040 <small>/6 months</small></div>
+            <ul>
+              <li>Unlimited Data (FUP applies)</li>
+              <li>FTTH Connection</li>
+              <li>180-Day Plan</li>
+              <li>32 OTT Platforms Included</li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary" style="width:100%;">Get Connected</a>
+          </div>
+          <div class="plan-card">
+            <h3>OTT + 100</h3>
+            <div class="speed">100 <small>Mbps</small></div>
+            <div class="price">₹4,380 <small>/6 months</small></div>
+            <ul>
+              <li>Unlimited Data (FUP applies)</li>
+              <li>FTTH Connection</li>
+              <li>180-Day Plan</li>
+              <li>32 OTT Platforms Included</li>
+            </ul>
+            <a href="contact.html" class="btn btn-outline-red" style="width:100%;">Get Connected</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- YEARLY PLANS (365 Days) - OTT Only, Two Tiers -->
+      <div class="plan-tab-content" id="tab-yearly">
+        <p class="plan-tab-note">All yearly plans include OTT platforms - choose Premium or Prime Plus</p>
+        <h4 class="plan-tier-label">Premium</h4>
+        <div class="plan-grid" style="margin-bottom: 2rem;">
+          <div class="plan-card">
+            <span class="plan-tier-badge">Premium</span>
+            <h3>Premium 40</h3>
+            <div class="speed">40 <small>Mbps</small></div>
+            <div class="price">₹5,680 <small>/year</small></div>
+            <ul>
+              <li>Unlimited Data (FUP applies)</li>
+              <li>FTTH Connection</li>
+              <li>365-Day Plan</li>
+              <li>OTT Premium Included</li>
+            </ul>
+            <a href="contact.html" class="btn btn-outline-red" style="width:100%;">Get Connected</a>
+          </div>
+          <div class="plan-card">
+            <span class="plan-tier-badge">Premium</span>
+            <h3>Premium 60</h3>
+            <div class="speed">60 <small>Mbps</small></div>
+            <div class="price">₹6,880 <small>/year</small></div>
+            <ul>
+              <li>Unlimited Data (FUP applies)</li>
+              <li>FTTH Connection</li>
+              <li>365-Day Plan</li>
+              <li>OTT Premium Included</li>
+            </ul>
+            <a href="contact.html" class="btn btn-outline-red" style="width:100%;">Get Connected</a>
+          </div>
+          <div class="plan-card popular">
+            <span class="plan-tier-badge">Premium</span>
+            <h3>Premium 80</h3>
+            <div class="speed">80 <small>Mbps</small></div>
+            <div class="price">₹8,080 <small>/year</small></div>
+            <ul>
+              <li>Unlimited Data (FUP applies)</li>
+              <li>FTTH Connection</li>
+              <li>365-Day Plan</li>
+              <li>OTT Premium Included</li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary" style="width:100%;">Get Connected</a>
+          </div>
+          <div class="plan-card">
+            <span class="plan-tier-badge">Premium</span>
+            <h3>Premium 100</h3>
+            <div class="speed">100 <small>Mbps</small></div>
+            <div class="price">₹8,760 <small>/year</small></div>
+            <ul>
+              <li>Unlimited Data (FUP applies)</li>
+              <li>FTTH Connection</li>
+              <li>365-Day Plan</li>
+              <li>OTT Premium Included</li>
+            </ul>
+            <a href="contact.html" class="btn btn-outline-red" style="width:100%;">Get Connected</a>
+          </div>
+        </div>
+        <h4 class="plan-tier-label">Prime Plus</h4>
+        <div class="plan-grid">
+          <div class="plan-card">
+            <span class="plan-tier-badge prime">Prime Plus</span>
+            <h3>Prime Plus 40</h3>
+            <div class="speed">40 <small>Mbps</small></div>
+            <div class="price">₹6,219 <small>/year</small></div>
+            <ul>
+              <li>Unlimited Data (FUP applies)</li>
+              <li>FTTH Connection</li>
+              <li>365-Day Plan</li>
+              <li>OTT Prime Plus Included</li>
+            </ul>
+            <a href="contact.html" class="btn btn-outline-red" style="width:100%;">Get Connected</a>
+          </div>
+          <div class="plan-card">
+            <span class="plan-tier-badge prime">Prime Plus</span>
+            <h3>Prime Plus 60</h3>
+            <div class="speed">60 <small>Mbps</small></div>
+            <div class="price">₹7,419 <small>/year</small></div>
+            <ul>
+              <li>Unlimited Data (FUP applies)</li>
+              <li>FTTH Connection</li>
+              <li>365-Day Plan</li>
+              <li>OTT Prime Plus Included</li>
+            </ul>
+            <a href="contact.html" class="btn btn-outline-red" style="width:100%;">Get Connected</a>
+          </div>
+          <div class="plan-card">
+            <span class="plan-tier-badge prime">Prime Plus</span>
+            <h3>Prime Plus 80</h3>
+            <div class="speed">80 <small>Mbps</small></div>
+            <div class="price">₹8,619 <small>/year</small></div>
+            <ul>
+              <li>Unlimited Data (FUP applies)</li>
+              <li>FTTH Connection</li>
+              <li>365-Day Plan</li>
+              <li>OTT Prime Plus Included</li>
+            </ul>
+            <a href="contact.html" class="btn btn-outline-red" style="width:100%;">Get Connected</a>
+          </div>
+          <div class="plan-card">
+            <span class="plan-tier-badge prime">Prime Plus</span>
+            <h3>Prime Plus 100</h3>
+            <div class="speed">100 <small>Mbps</small></div>
+            <div class="price">₹9,299 <small>/year</small></div>
+            <ul>
+              <li>Unlimited Data (FUP applies)</li>
+              <li>FTTH Connection</li>
+              <li>365-Day Plan</li>
+              <li>OTT Prime Plus Included</li>
+            </ul>
+            <a href="contact.html" class="btn btn-outline-red" style="width:100%;">Get Connected</a>
+          </div>
+        </div>
+      </div>
+
+      <p style="text-align: center; margin-top: 1.5rem; color: var(--text-light); font-size: 0.9rem;">Fair usage policy applies. All prices are inclusive of GST. <a href="contact.html" style="color: var(--primary);">Contact us</a> for custom plans.</p>
     </div>
   </section>
 
@@ -345,6 +634,16 @@
     function toggleMenu() {
       document.getElementById('navLinks').classList.toggle('open');
     }
+
+    // Plan duration tabs
+    document.querySelectorAll('.plan-tab').forEach(function(tab) {
+      tab.addEventListener('click', function() {
+        document.querySelectorAll('.plan-tab').forEach(function(t) { t.classList.remove('active'); });
+        document.querySelectorAll('.plan-tab-content').forEach(function(c) { c.classList.remove('active'); });
+        tab.classList.add('active');
+        document.getElementById('tab-' + tab.getAttribute('data-tab')).classList.add('active');
+      });
+    });
   </script>
 </body>
 </html>
