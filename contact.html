@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Fibrix Broadband - Get in touch for broadband connections, business leased lines, networking hardware enquiries, and technical support.">
+  <title>Contact Us | Fibrix Broadband</title>
+  <link rel="icon" type="image/png" href="Fibrix Logo Style 1.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="Fibrix Logo Style 1.png" alt="Fibrix Broadband">
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html" class="active">Contact Us</a>
+        <a href="https://pay.fibrixllp.org">Pay Bill</a>
+      </nav>
+      <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>We'd love to hear from you — whether it's a new connection, support, or hardware enquiry</p>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <div class="container">
+    <div class="contact-wrapper">
+      <!-- Contact Information -->
+      <div class="contact-info">
+        <h2>Get In Touch</h2>
+        <div class="contact-info-item">
+          <div class="icon">📞</div>
+          <div>
+            <h4>Phone</h4>
+            <p>+91 9933049907</p>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="icon">📧</div>
+          <div>
+            <h4>Email</h4>
+            <p>info@fibrixllp.org</p>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="icon">📍</div>
+          <div>
+            <h4>Office Address</h4>
+            <p>Fibrix LLP<br>Joynagar Mojilpur,<br>South 24 Parganas,<br>West Bengal - 743337</p>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="icon">🕐</div>
+          <div>
+            <h4>Business Hours</h4>
+            <p>Monday – Saturday: 9:00 AM – 7:00 PM IST<br>Sunday: 10:00 AM – 2:00 PM (Support only)</p>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="icon">🌐</div>
+          <div>
+            <h4>Website</h4>
+            <p>www.fibrixllp.org</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form-card">
+        <h2>Send Us a Message</h2>
+        <form id="contactForm" onsubmit="handleContactSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name *</label>
+              <input type="text" id="firstName" name="firstName" required placeholder="Your first name">
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" name="lastName" placeholder="Your last name">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required placeholder="you@example.com">
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" name="phone" required placeholder="+91 XXXXX XXXXX">
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject *</label>
+            <select id="subject" name="subject" required>
+              <option value="">Select a subject</option>
+              <option value="New Broadband Connection">New Broadband Connection</option>
+              <option value="Business Leased Line Enquiry">Business Leased Line Enquiry</option>
+              <option value="Networking Hardware Enquiry">Networking Hardware Enquiry</option>
+              <option value="Wholesale Bandwidth">Wholesale Bandwidth</option>
+              <option value="Technical Support">Technical Support</option>
+              <option value="Billing / Payment Issue">Billing / Payment Issue</option>
+              <option value="OTT Subscription">OTT Subscription</option>
+              <option value="Feedback / Complaint">Feedback / Complaint</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" required placeholder="Tell us how we can help you — include your location/area for connection enquiries..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+        </form>
+        <p id="formMessage" style="margin-top: 1rem; text-align: center; font-weight: 600; display: none;"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <img src="Fibrix Logo Style 2.png" alt="Fibrix Broadband">
+          </div>
+          <p>Your trusted ISP &amp; MSO partner delivering high-speed fiber broadband, enterprise leased lines, OTT subscriptions, and professional networking hardware across West Bengal.</p>
+        </div>
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="https://pay.fibrixllp.org">Pay Bill</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms &amp; Conditions</a></li>
+            <li><a href="refund-policy.html">Refund / Cancellation Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Contact</h3>
+          <ul>
+            <li>📞 +91 9933049907</li>
+            <li>📧 info@fibrixllp.org</li>
+            <li>📍 Joynagar Mojilpur, South 24 Parganas, West Bengal - 743337</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 Fibrix LLP. All rights reserved. | ISP &amp; MSO Services
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('navLinks').classList.toggle('open');
+    }
+
+    function handleContactSubmit(e) {
+      e.preventDefault();
+      const form = e.target;
+      const msg = document.getElementById('formMessage');
+      const submitBtn = form.querySelector('button[type="submit"]');
+
+      // Disable button while submitting
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending...';
+
+      // Get form values
+      const firstName = form.firstName.value.trim();
+      const lastName = form.lastName.value.trim();
+      const email = form.email.value.trim();
+      const phone = form.phone.value.trim();
+      const subject = form.subject.value;
+      const message = form.message.value.trim();
+
+      // Prepend subject to message since Google Form has no Subject field
+      const fullMessage = '[' + subject + '] ' + message;
+
+      // Google Form submission URL
+      const gFormURL = 'https://docs.google.com/forms/d/e/1FAIpQLSfUBIso32ibaYjd_u8lW6EbO89Hq51QYiuaCLd40j8W1Kb2KA/formResponse';
+
+      // Build form data with Google Form entry IDs
+      const formData = new URLSearchParams();
+      formData.append('entry.1423676904', firstName);   // First Name
+      formData.append('entry.1657985535', lastName);     // Last Name
+      formData.append('entry.291522330', email);         // Email Address
+      formData.append('entry.350177398', phone);         // Phone Number
+      formData.append('entry.1467988090', fullMessage);  // Message
+
+      // Submit to Google Forms via fetch (no-cors mode to avoid CORS issues)
+      fetch(gFormURL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: formData.toString()
+      }).then(function() {
+        msg.style.display = 'block';
+        msg.style.color = '#0a7c42';
+        msg.textContent = '\u2705 Thank you! Your message has been received. Our team will get back to you within 24 hours.';
+        form.reset();
+      }).catch(function() {
+        msg.style.display = 'block';
+        msg.style.color = '#c11111';
+        msg.textContent = '\u274c Something went wrong. Please try again or contact us directly at info@fibrixllp.org.';
+      }).finally(function() {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Send Message';
+      });
+    }
+  </script>
+</body>
+</html>

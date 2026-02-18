@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pay your broadband bill online. Quick and secure payment portal for Fibrix Broadband.">
+  <title>Pay Bill | Fibrix Broadband</title>
+  <link rel="icon" type="image/png" href="Fibrix Logo Style 1.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="Fibrix Logo Style 1.png" alt="Fibrix Broadband">
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="https://pay.fibrixllp.org" class="active">Pay Bill</a>
+      </nav>
+      <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="container">
+      <h1>Pay Bill to a Plan</h1>
+      <p>Renew your broadband subscription or sign up for a new connection</p>
+    </div>
+  </section>
+
+  <!-- CHECKOUT SECTION -->
+  <div class="container">
+    <div class="checkout-wrapper">
+      <!-- Checkout Form -->
+      <div class="checkout-form">
+        <h2>Subscriber Details</h2>
+        <form id="checkoutForm" onsubmit="handleCheckout(event)">
+
+          <!-- Purpose -->
+          <div class="form-group">
+            <label for="purpose">I want to *</label>
+            <select id="purpose" name="purpose" required onchange="toggleFields()">
+              <option value="">Select an option</option>
+              <option value="new">Subscribe to a New Connection</option>
+              <option value="renew">Renew / Pay Monthly Bill</option>
+            </select>
+          </div>
+
+          <!-- Existing subscriber fields -->
+          <div id="existingFields" style="display: none;">
+            <div class="form-group">
+              <label for="subscriberId">Subscriber ID / Username *</label>
+              <input type="text" id="subscriberId" name="subscriberId" placeholder="e.g., FBX-10234 or your username">
+            </div>
+          </div>
+
+          <!-- Common fields -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="billFirstName">Full Name *</label>
+              <input type="text" id="billFirstName" name="billFirstName" required placeholder="Your full name">
+            </div>
+            <div class="form-group">
+              <label for="billPhone">Phone Number *</label>
+              <input type="tel" id="billPhone" name="billPhone" required placeholder="+91 XXXXX XXXXX">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="billEmail">Email Address *</label>
+            <input type="email" id="billEmail" name="billEmail" required placeholder="you@example.com">
+          </div>
+
+          <!-- New connection fields -->
+          <div id="newFields" style="display: none;">
+            <div class="form-group">
+              <label for="billAddress">Installation Address *</label>
+              <input type="text" id="billAddress" name="billAddress" placeholder="Full address with landmark">
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="billArea">Area / Village *</label>
+                <input type="text" id="billArea" name="billArea" placeholder="Your area or village">
+              </div>
+              <div class="form-group">
+                <label for="billPincode">PIN Code *</label>
+                <input type="text" id="billPincode" name="billPincode" placeholder="e.g., 743337">
+              </div>
+            </div>
+          </div>
+
+          <!-- Plan Selection -->
+          <div class="form-group">
+            <label for="selectedPlan">Select Plan *</label>
+            <select id="selectedPlan" name="selectedPlan" required onchange="updateSummary()">
+              <option value="" data-price="0">Choose a plan</option>
+              <option value="start30-monthly" data-price="250">Start 30 — 30 Mbps — ₹250/month</option>
+              <option value="start30-quarterly" data-price="700">Start 30 — 30 Mbps — ₹700/quarter</option>
+              <option value="start30-yearly" data-price="2500">Start 30 — 30 Mbps — ₹2,500/year</option>
+              <option value="connect40-monthly" data-price="330">Connect 40 — 40 Mbps — ₹330/month</option>
+              <option value="connect40-quarterly" data-price="930">Connect 40 — 40 Mbps — ₹930/quarter</option>
+              <option value="connect40-yearly" data-price="3300">Connect 40 — 40 Mbps — ₹3,300/year</option>
+              <option value="family60-monthly" data-price="430">Family 60 — 60 Mbps — ₹430/month</option>
+              <option value="family60-quarterly" data-price="1200">Family 60 — 60 Mbps — ₹1,200/quarter</option>
+              <option value="family60-yearly" data-price="4300">Family 60 — 60 Mbps — ₹4,300/year</option>
+              <option value="power80-monthly" data-price="520">Power 80 — 80 Mbps — ₹520/month (Most Popular)</option>
+              <option value="power80-quarterly" data-price="1460">Power 80 — 80 Mbps — ₹1,460/quarter</option>
+              <option value="power80-yearly" data-price="5200">Power 80 — 80 Mbps — ₹5,200/year</option>
+              <option value="turbo100-monthly" data-price="600">Turbo 100 — 100 Mbps — ₹600/month (Best Value)</option>
+              <option value="turbo100-quarterly" data-price="1680">Turbo 100 — 100 Mbps — ₹1,680/quarter</option>
+              <option value="turbo100-yearly" data-price="6000">Turbo 100 — 100 Mbps — ₹6,000/year</option>
+            </select>
+          </div>
+
+          <!-- Payment Method -->
+          <h2 style="margin-top: 2rem;">Payment Method</h2>
+          <div class="form-group">
+            <div style="display: flex; flex-direction: column; gap: 0.8rem;">
+              <label style="display: flex; align-items: center; gap: 0.6rem; cursor: pointer; font-weight: 400;">
+                <input type="radio" name="paymentMethod" value="upi" checked style="width: auto;">
+                UPI / Google Pay / PhonePe / Paytm
+              </label>
+              <label style="display: flex; align-items: center; gap: 0.6rem; cursor: pointer; font-weight: 400;">
+                <input type="radio" name="paymentMethod" value="card" style="width: auto;">
+                Debit / Credit Card
+              </label>
+              <label style="display: flex; align-items: center; gap: 0.6rem; cursor: pointer; font-weight: 400;">
+                <input type="radio" name="paymentMethod" value="netbanking" style="width: auto;">
+                Net Banking
+              </label>
+              <label style="display: flex; align-items: center; gap: 0.6rem; cursor: pointer; font-weight: 400;">
+                <input type="radio" name="paymentMethod" value="cash" style="width: auto;">
+                Cash (Pay at Office)
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group" style="margin-top: 1rem;">
+            <label style="display: flex; align-items: flex-start; gap: 0.5rem; font-weight: 400; font-size: 0.9rem;">
+              <input type="checkbox" required style="width: auto; margin-top: 3px;">
+              I agree to the <a href="terms.html" style="color: var(--primary);">Terms &amp; Conditions</a>, <a href="privacy-policy.html" style="color: var(--primary);">Privacy Policy</a>, and <a href="refund-policy.html" style="color: var(--primary);">Refund Policy</a>.
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem; font-size: 1.1rem; padding: 1rem;">Proceed to Pay</button>
+        </form>
+        <p id="checkoutMessage" style="margin-top: 1rem; text-align: center; font-weight: 600; display: none;"></p>
+      </div>
+
+      <!-- Order Summary -->
+      <div class="checkout-summary">
+        <h2>Payment Summary</h2>
+        <div class="summary-item">
+          <span>Plan</span>
+          <span id="summaryPlan">—</span>
+        </div>
+        <div class="summary-item">
+          <span>Subtotal</span>
+          <span id="summarySubtotal">₹ 0.00</span>
+        </div>
+        <div class="summary-item">
+          <span>GST (18%)</span>
+          <span id="summaryGst">₹ 0.00</span>
+        </div>
+        <div class="summary-total">
+          <span>Total Payable</span>
+          <span id="summaryTotal">₹ 0.00</span>
+        </div>
+
+        <div style="margin-top: 2rem; padding: 1.2rem; background: var(--bg); border-radius: 8px;">
+          <h3 style="font-size: 0.95rem; color: var(--dark); margin-bottom: 0.8rem;">🔒 Secure Payment</h3>
+          <p style="font-size: 0.85rem; color: var(--text-light); margin: 0;">All transactions are encrypted and securely processed. We never store your card details.</p>
+        </div>
+
+        <div style="margin-top: 1.5rem; padding: 1.2rem; background: var(--bg); border-radius: 8px;">
+          <h3 style="font-size: 0.95rem; color: var(--dark); margin-bottom: 0.8rem;">📞 Need Help?</h3>
+          <p style="font-size: 0.85rem; color: var(--text-light); margin: 0;">Call us at <strong>+91 9933049907</strong> or email <strong>info@fibrixllp.org</strong> for payment assistance.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <img src="Fibrix Logo Style 2.png" alt="Fibrix Broadband">
+          </div>
+          <p>Your trusted ISP &amp; MSO partner delivering high-speed fiber broadband, enterprise leased lines, OTT subscriptions, and professional networking hardware across West Bengal.</p>
+        </div>
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="https://pay.fibrixllp.org">Pay Bill</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms &amp; Conditions</a></li>
+            <li><a href="refund-policy.html">Refund / Cancellation Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Contact</h3>
+          <ul>
+            <li>📞 +91 9933049907</li>
+            <li>📧 info@fibrixllp.org</li>
+            <li>📍 Joynagar Mojilpur, South 24 Parganas, West Bengal - 743337</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 Fibrix LLP. All rights reserved. | ISP &amp; MSO Services
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('navLinks').classList.toggle('open');
+    }
+
+    function toggleFields() {
+      const purpose = document.getElementById('purpose').value;
+      document.getElementById('existingFields').style.display = purpose === 'renew' ? 'block' : 'none';
+      document.getElementById('newFields').style.display = purpose === 'new' ? 'block' : 'none';
+
+      // Toggle required attributes
+      document.getElementById('subscriberId').required = purpose === 'renew';
+      const newInputs = document.querySelectorAll('#newFields input');
+      newInputs.forEach(input => input.required = purpose === 'new');
+    }
+
+    function updateSummary() {
+      const select = document.getElementById('selectedPlan');
+      const option = select.options[select.selectedIndex];
+      const price = parseFloat(option.getAttribute('data-price')) || 0;
+      const gst = price * 0.18;
+      const total = price + gst;
+
+      document.getElementById('summaryPlan').textContent = price > 0 ? option.text : '—';
+      document.getElementById('summarySubtotal').textContent = '₹ ' + price.toFixed(2);
+      document.getElementById('summaryGst').textContent = '₹ ' + gst.toFixed(2);
+      document.getElementById('summaryTotal').textContent = '₹ ' + total.toFixed(2);
+    }
+
+    function handleCheckout(e) {
+      e.preventDefault();
+      const msg = document.getElementById('checkoutMessage');
+      msg.style.display = 'block';
+      msg.style.color = '#0a7c42';
+      msg.textContent = '✅ Request submitted successfully! You will receive a confirmation on your email and phone shortly. For cash payments, please visit our office.';
+      e.target.reset();
+      document.getElementById('existingFields').style.display = 'none';
+      document.getElementById('newFields').style.display = 'none';
+      updateSummary();
+    }
+  </script>
+</body>
+</html>
