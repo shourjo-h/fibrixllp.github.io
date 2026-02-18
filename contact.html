@@ -200,9 +200,6 @@
       const subject = form.subject.value;
       const message = form.message.value.trim();
 
-      // Prepend subject to message since Google Form has no Subject field
-      const fullMessage = '[' + subject + '] ' + message;
-
       // Google Form submission URL
       const gFormURL = 'https://docs.google.com/forms/d/e/1FAIpQLSfUBIso32ibaYjd_u8lW6EbO89Hq51QYiuaCLd40j8W1Kb2KA/formResponse';
 
@@ -212,7 +209,8 @@
       formData.append('entry.1657985535', lastName);     // Last Name
       formData.append('entry.291522330', email);         // Email Address
       formData.append('entry.350177398', phone);         // Phone Number
-      formData.append('entry.1467988090', fullMessage);  // Message
+      formData.append('entry.1065936945', subject);      // Subject
+      formData.append('entry.1467988090', message);      // Message
 
       // Submit to Google Forms via fetch (no-cors mode to avoid CORS issues)
       fetch(gFormURL, {
