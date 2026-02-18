@@ -17,13 +17,16 @@ Official website for **[fibrixllp.org](https://fibrixllp.org)** - Fibrix Broadba
 
 ## Broadband Plans
 
-| Plan | Speed | Price (incl. GST) |
-|------|-------|--------------------|
-| Start 30 | 30 Mbps | Rs.250/month |
-| Connect 40 | 40 Mbps | Rs.330/month |
-| Family 60 | 60 Mbps | Rs.430/month |
-| Power 80 (Most Popular) | 80 Mbps | Rs.520/month |
-| Turbo 100 | 100 Mbps | Rs.600/month |
+| Plan | Speed | Price (incl. GST) | Duration |
+|------|-------|--------------------|----------|
+| Start 30 | 30 Mbps | Rs.750 | 3 months |
+| OTT + 30 | 30 Mbps | Rs.550/month | Monthly (32 OTTs included) |
+| Connect 40 | 40 Mbps | Rs.330/month | Monthly |
+| Family 60 | 60 Mbps | Rs.430/month | Monthly |
+| Power 80 (Most Popular) | 80 Mbps | Rs.520/month | Monthly |
+| Turbo 100 | 100 Mbps | Rs.600/month | Monthly |
+
+More durations (3-month, 6-month, yearly) to be added.
 
 ## Logos
 
@@ -94,4 +97,3 @@ www -> shourjo-h.github.io
 
 - **Papia Banerjee** - Partner
 - **Jibesh Mahato** - Partner
-- **Shourjo Banerjee** - Head of Operations
