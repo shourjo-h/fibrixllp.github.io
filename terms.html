@@ -190,6 +190,24 @@
     function toggleMenu() {
       document.getElementById('navLinks').classList.toggle('open');
     }
+
+    // Collapsible header on scroll
+    (function() {
+      var lastScroll = 0;
+      var header = document.querySelector('.header');
+      window.addEventListener('scroll', function() {
+        var currentScroll = window.pageYOffset;
+        if (currentScroll <= 10) {
+          header.classList.remove('header-hidden', 'header-scrolled');
+        } else if (currentScroll > lastScroll && currentScroll > 60) {
+          header.classList.add('header-hidden');
+        } else {
+          header.classList.remove('header-hidden');
+          header.classList.add('header-scrolled');
+        }
+        lastScroll = currentScroll;
+      });
+    })();
   </script>
 </body>
 </html>
