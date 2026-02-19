@@ -76,8 +76,9 @@ ul {
 }
 
 .logo img {
-  height: 60px;
+  height: 80px;
   width: auto;
+  margin: -10px 0;
 }
 
 .nav-links {
