@@ -66,8 +66,8 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.8rem 2rem;
-  min-height: 110px;
+  padding: 0.4rem 2rem;
+  min-height: 70px;
 }
 
 .logo {
@@ -76,7 +76,7 @@ ul {
 }
 
 .logo img {
-  height: 100px;
+  height: 60px;
   width: auto;
 }
 
