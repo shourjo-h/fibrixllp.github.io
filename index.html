@@ -635,6 +635,29 @@
       document.getElementById('navLinks').classList.toggle('open');
     }
 
+    // Collapsible header on mobile
+    (function() {
+      var lastScroll = 0;
+      var header = document.querySelector('.header');
+      var mobileQuery = window.matchMedia('(max-width: 768px)');
+      window.addEventListener('scroll', function() {
+        if (!mobileQuery.matches) {
+          header.classList.remove('header-hidden', 'header-scrolled');
+          return;
+        }
+        var currentScroll = window.pageYOffset;
+        if (currentScroll <= 10) {
+          header.classList.remove('header-hidden', 'header-scrolled');
+        } else if (currentScroll > lastScroll && currentScroll > 60) {
+          header.classList.add('header-hidden');
+        } else {
+          header.classList.remove('header-hidden');
+          header.classList.add('header-scrolled');
+        }
+        lastScroll = currentScroll;
+      });
+    })();
+
     // Plan duration tabs
     document.querySelectorAll('.plan-tab').forEach(function(tab) {
       tab.addEventListener('click', function() {
