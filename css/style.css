@@ -929,6 +929,16 @@ ul {
 }
 
 @media (max-width: 768px) {
+  .header .container {
+    padding: 0.2rem 1rem;
+    min-height: 50px;
+  }
+
+  .logo img {
+    height: 80px;
+    margin: -18px 0;
+  }
+
   .hamburger {
     display: flex;
   }
