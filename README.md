@@ -48,7 +48,7 @@ The contact form submits to a Google Form via `fetch` (no-cors POST). Entry IDs:
 
 ## Payment Portal
 
-Bill payments are handled externally at **[pay.fibrixllp.org](https://pay.fibrixllp.org)**.
+Bill payments are handled externally at **[pay.fibrixllp.org](https://pay.fibrixllp.org/customer_portal)**.
 
 ## Hosting & Deployment
 
