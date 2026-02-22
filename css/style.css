@@ -862,41 +862,23 @@ ul {
 
 .ott-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 0.8rem;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 0.6rem;
 }
 
 .ott-item {
   background: var(--white);
   border-radius: var(--radius);
-  padding: 0.8rem 1rem;
-  font-size: 0.9rem;
-  font-weight: 500;
+  padding: 0.7rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
   color: var(--text);
   box-shadow: var(--shadow);
   border: 1px solid var(--border);
   transition: all var(--transition);
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-}
-
-.ott-item img {
-  width: 28px;
-  height: 28px;
-  border-radius: 6px;
-  object-fit: contain;
-  flex-shrink: 0;
-}
-
-.ott-item .ott-emoji {
-  width: 28px;
-  height: 28px;
-  display: flex;
-  align-items: center;
+  text-align: center;
   justify-content: center;
-  font-size: 1.2rem;
-  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .ott-item:hover {
