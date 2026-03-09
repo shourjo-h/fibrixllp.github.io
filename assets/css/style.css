@@ -49,29 +49,50 @@
   --light-bg: #1e1e2a;
 }
 
+/* -- Header -- */
 [data-theme="dark"] .header {
-  background: var(--white);
+  background: var(--card-bg);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
+[data-theme="dark"] .header.header-scrolled {
+  background: var(--card-bg);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="dark"] .hamburger span {
+  background: var(--text);
+}
+
+[data-theme="dark"] .nav-links a {
+  color: var(--text);
+}
+
+[data-theme="dark"] .nav-links {
+  background: var(--card-bg);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* -- Hero (text must stay white on the dark gradient) -- */
 [data-theme="dark"] .hero {
   background: linear-gradient(135deg, #121218 0%, #1a1a2e 100%);
+  color: #fff;
 }
 
-[data-theme="dark"] .card,
-[data-theme="dark"] .hardware-card,
-[data-theme="dark"] .iptv-card {
-  background: var(--card-bg);
-  border-color: var(--border);
+[data-theme="dark"] .hero-text h1,
+[data-theme="dark"] .hero-text p,
+[data-theme="dark"] .stat-box .stat-label {
+  color: #e0e0e0;
 }
 
-[data-theme="dark"] .plan-card {
-  background: var(--card-bg);
-  border-color: var(--border);
+[data-theme="dark"] .stat-box {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.1);
 }
 
-[data-theme="dark"] .section-alt {
-  background: var(--section-alt-bg);
+/* -- Buttons (literal white text on coloured backgrounds) -- */
+[data-theme="dark"] .btn-primary {
+  color: #fff;
 }
 
 [data-theme="dark"] .btn-outline {
@@ -79,6 +100,174 @@
   color: #fff;
 }
 
+[data-theme="dark"] .btn-outline:hover {
+  background: rgba(255,255,255,0.12);
+  color: #fff;
+}
+
+[data-theme="dark"] .btn-outline-red {
+  border-color: var(--primary-light);
+  color: var(--primary-light);
+}
+
+[data-theme="dark"] .btn-outline-red:hover {
+  background: var(--primary);
+  color: #fff;
+}
+
+/* -- Section titles & subtitles (--dark becomes invisible; use --text) -- */
+[data-theme="dark"] .section-title {
+  color: var(--text);
+}
+
+[data-theme="dark"] .section-subtitle {
+  color: var(--text-light);
+}
+
+[data-theme="dark"] .section-alt {
+  background: var(--section-alt-bg);
+}
+
+/* -- Cards -- */
+[data-theme="dark"] .card,
+[data-theme="dark"] .hardware-card,
+[data-theme="dark"] .iptv-card {
+  background: var(--card-bg);
+  border-color: var(--border);
+}
+
+[data-theme="dark"] .card h3,
+[data-theme="dark"] .hw-text h4 {
+  color: var(--text);
+}
+
+[data-theme="dark"] .card-icon {
+  color: #fff;
+}
+
+[data-theme="dark"] .hardware-card:hover {
+  border-left-color: var(--primary-light);
+}
+
+/* -- Plan tabs -- */
+[data-theme="dark"] .plan-tab {
+  background: var(--card-bg);
+  border-color: var(--border);
+  color: var(--text);
+}
+
+[data-theme="dark"] .plan-tab:hover {
+  border-color: var(--primary-light);
+  color: var(--primary-light);
+}
+
+[data-theme="dark"] .plan-tab.active {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+}
+
+/* -- Plan cards -- */
+[data-theme="dark"] .plan-card {
+  background: var(--card-bg);
+  border-color: var(--border);
+}
+
+[data-theme="dark"] .plan-card h3,
+[data-theme="dark"] .plan-card .price {
+  color: var(--text);
+}
+
+[data-theme="dark"] .plan-card.popular::before {
+  color: #fff;
+}
+
+[data-theme="dark"] .plan-tier-label {
+  color: var(--text);
+}
+
+[data-theme="dark"] .plan-tier-badge.prime {
+  background: var(--section-alt-bg);
+  color: #fff;
+}
+
+[data-theme="dark"] .plan-tab-note {
+  color: var(--text-light);
+}
+
+/* -- OTT tabs & items -- */
+[data-theme="dark"] .ott-tab {
+  background: var(--card-bg);
+  border-color: var(--border);
+  color: var(--text);
+}
+
+[data-theme="dark"] .ott-tab:hover {
+  border-color: var(--primary-light);
+  color: var(--primary-light);
+}
+
+[data-theme="dark"] .ott-tab.active {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+}
+
+[data-theme="dark"] .ott-item {
+  background: var(--card-bg);
+  border-color: var(--border);
+  color: var(--text);
+}
+
+[data-theme="dark"] .ott-item:hover {
+  border-color: var(--primary-light);
+}
+
+/* -- IPTV cards -- */
+[data-theme="dark"] .iptv-card-header {
+  border-bottom-color: var(--border);
+}
+
+[data-theme="dark"] .iptv-card-header h3 {
+  color: var(--text);
+}
+
+[data-theme="dark"] .iptv-badge {
+  color: #fff;
+}
+
+[data-theme="dark"] .iptv-highlights .iptv-tag {
+  background: rgba(193, 17, 17, 0.15);
+  color: var(--primary-light);
+}
+
+[data-theme="dark"] .iptv-toggle {
+  background: var(--section-alt-bg);
+  color: var(--text);
+  border-color: var(--border);
+  border-top-color: var(--border);
+}
+
+[data-theme="dark"] .iptv-toggle:hover {
+  background: var(--input-bg);
+}
+
+[data-theme="dark"] .iptv-channels {
+  background: var(--section-alt-bg);
+  border-top-color: var(--border);
+}
+
+[data-theme="dark"] .channel-grid span {
+  background: rgba(255,255,255,0.06);
+  color: var(--text);
+}
+
+[data-theme="dark"] .channel-cat {
+  color: var(--primary-light);
+  border-bottom-color: var(--border);
+}
+
+/* -- IPTV search -- */
 [data-theme="dark"] .iptv-search-box {
   background: var(--input-bg);
   border-color: var(--border);
@@ -86,6 +275,20 @@
 
 [data-theme="dark"] .iptv-search-input {
   color: var(--text);
+}
+
+[data-theme="dark"] .iptv-search-input::placeholder {
+  color: var(--text-light);
+}
+
+[data-theme="dark"] .iptv-search-clear {
+  background: var(--border);
+  color: var(--text);
+}
+
+[data-theme="dark"] .iptv-search-clear:hover {
+  background: var(--primary);
+  color: #fff;
 }
 
 [data-theme="dark"] .iptv-search-results {
@@ -101,27 +304,79 @@
   border-color: var(--border);
 }
 
+[data-theme="dark"] .iptv-search-more {
+  border-top-color: var(--border);
+  color: var(--text-light);
+}
+
+/* -- Page header (about, contact, policies) -- */
+[data-theme="dark"] .page-header {
+  background: linear-gradient(135deg, #121218 0%, #1a1a2e 100%);
+  color: #fff;
+}
+
+/* -- Content section (policies, about) -- */
+[data-theme="dark"] .content-section {
+  background: var(--card-bg);
+}
+
+[data-theme="dark"] .content-section h2 {
+  color: var(--text);
+  border-bottom-color: var(--border);
+}
+
+/* -- Contact page -- */
+[data-theme="dark"] .contact-info {
+  background: var(--dark);
+  color: #fff;
+}
+
+[data-theme="dark"] .contact-form-card {
+  background: var(--card-bg);
+}
+
+[data-theme="dark"] .contact-form-card h2 {
+  color: var(--text);
+}
+
+[data-theme="dark"] .form-group input,
+[data-theme="dark"] .form-group textarea,
+[data-theme="dark"] .form-group select {
+  background: var(--input-bg);
+  border-color: var(--border);
+  color: var(--text);
+}
+
+[data-theme="dark"] .form-group input:focus,
+[data-theme="dark"] .form-group textarea:focus,
+[data-theme="dark"] .form-group select:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(193, 17, 17, 0.2);
+}
+
+/* -- Checkout -- */
+[data-theme="dark"] .checkout-form,
+[data-theme="dark"] .checkout-summary {
+  background: var(--card-bg);
+}
+
+[data-theme="dark"] .checkout-form h2,
+[data-theme="dark"] .checkout-summary h2 {
+  color: var(--text);
+}
+
+[data-theme="dark"] .summary-item {
+  border-bottom-color: var(--border);
+}
+
+/* -- Footer (text must stay white on dark bg) -- */
 [data-theme="dark"] .footer {
   background: var(--footer-bg);
+  color: #fff;
 }
 
-[data-theme="dark"] .nav-links a {
-  color: var(--text);
-}
-
-[data-theme="dark"] .iptv-toggle {
-  color: var(--text);
-  border-color: var(--border);
-}
-
-[data-theme="dark"] .iptv-highlights .iptv-tag {
-  background: rgba(193, 17, 17, 0.15);
-  color: var(--primary-light);
-}
-
-[data-theme="dark"] .channel-grid span {
-  background: rgba(255,255,255,0.06);
-  color: var(--text);
+[data-theme="dark"] .footer-bottom {
+  border-top-color: rgba(255, 255, 255, 0.08);
 }
 
 /* ===== PAGE LOADER ===== */
