@@ -50,21 +50,13 @@
 }
 
 /* -- Header -- */
-[data-theme="dark"] .header {
-  background: linear-gradient(135deg, #121218 0%, #1a1a2e 100%) !important;
-  background-attachment: fixed !important;
+[data-theme="dark"] .header,
+[data-theme="dark"] .header.header-scrolled {
+  background: #121218 !important;
   box-shadow: none !important;
   border: none !important;
   outline: none !important;
   transition: transform 0.3s ease !important;
-}
-
-[data-theme="dark"] .header.header-scrolled {
-  background: linear-gradient(135deg, #121218 0%, #1a1a2e 100%) !important;
-  background-attachment: fixed !important;
-  box-shadow: none !important;
-  border: none !important;
-  outline: none !important;
 }
 
 [data-theme="dark"] .hamburger span {
@@ -81,10 +73,9 @@
   border-top: 1px solid var(--border);
 }
 
-/* -- Hero (text must stay white on the dark gradient) -- */
+/* -- Hero -- */
 [data-theme="dark"] .hero {
-  background: linear-gradient(135deg, #121218 0%, #1a1a2e 100%);
-  background-attachment: fixed;
+  background: #121218 !important;
   color: #fff;
 }
 
@@ -325,9 +316,12 @@
 
 /* -- Page header (about, contact, policies) -- */
 [data-theme="dark"] .page-header {
-  background: linear-gradient(135deg, #121218 0%, #1a1a2e 100%);
-  background-attachment: fixed;
+  background: #121218 !important;
   color: #fff;
+}
+
+[data-theme="dark"] .page-header::before {
+  display: none;
 }
 
 /* -- Content section (policies, about) -- */
