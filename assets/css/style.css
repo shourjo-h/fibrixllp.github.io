@@ -88,6 +88,11 @@
   color: #fff;
 }
 
+[data-theme="dark"] .hero::before,
+[data-theme="dark"] .hero::after {
+  display: none;
+}
+
 [data-theme="dark"] .hero-text h1,
 [data-theme="dark"] .hero-text p,
 [data-theme="dark"] .stat-box .stat-label {
