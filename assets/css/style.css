@@ -51,7 +51,7 @@
 
 /* -- Header -- */
 [data-theme="dark"] .header {
-  background: #121218 !important;
+  background: transparent !important;
   box-shadow: none !important;
   border: none !important;
   outline: none !important;
@@ -59,10 +59,23 @@
 }
 
 [data-theme="dark"] .header.header-scrolled {
-  background: #121218 !important;
+  background: rgba(18, 18, 24, 0.97) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   box-shadow: none !important;
   border: none !important;
   outline: none !important;
+}
+
+/* Pull hero/page-header up behind the transparent header */
+[data-theme="dark"] .hero {
+  margin-top: -70px;
+  padding-top: calc(5rem + 70px);
+}
+
+[data-theme="dark"] .page-header {
+  margin-top: -70px;
+  padding-top: calc(3rem + 70px);
 }
 
 [data-theme="dark"] .hamburger span {
@@ -1920,6 +1933,17 @@ ul {
 
   .search-pack-price {
     font-size: 0.6rem;
+  }
+
+  /* Adjust dark hero/page-header overlap for shorter mobile header */
+  [data-theme="dark"] .hero {
+    margin-top: -50px;
+    padding-top: calc(5rem + 50px);
+  }
+
+  [data-theme="dark"] .page-header {
+    margin-top: -50px;
+    padding-top: calc(3rem + 50px);
   }
 }
 
