@@ -1,0 +1,25 @@
+{
+  "name": "Fibrix Broadband",
+  "short_name": "Fibrix",
+  "description": "High-speed fiber broadband, IPTV packages, OTT subscriptions, and networking hardware in West Bengal.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f7f8fa",
+  "theme_color": "#c11111",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "assets/images/logo-primary.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/images/logo-primary.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "utilities"]
+}

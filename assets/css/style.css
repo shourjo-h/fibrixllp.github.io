@@ -17,12 +17,188 @@
   --white: #ffffff;
   --text: #2d2d2d;
   --text-light: #5a5a5a;
+  --text-dark: #2d2d2d;
   --border: #e2e2e2;
   --shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
   --shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.12);
   --radius: 10px;
   --transition: 0.3s ease;
+  --card-bg: #ffffff;
+  --section-alt-bg: #f0f1f5;
+  --footer-bg: #1a1a2e;
+  --input-bg: #ffffff;
+  --light-bg: #f7f8fa;
 }
+
+/* ===== DARK MODE ===== */
+[data-theme="dark"] {
+  --bg: #121218;
+  --white: #1e1e2a;
+  --text: #e0e0e0;
+  --text-light: #a0a0a0;
+  --text-dark: #e0e0e0;
+  --border: #333344;
+  --dark: #0e0e16;
+  --dark-medium: #161626;
+  --shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.4);
+  --card-bg: #1e1e2a;
+  --section-alt-bg: #181822;
+  --footer-bg: #0e0e16;
+  --input-bg: #2a2a3a;
+  --light-bg: #1e1e2a;
+}
+
+[data-theme="dark"] .header {
+  background: var(--white);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .hero {
+  background: linear-gradient(135deg, #121218 0%, #1a1a2e 100%);
+}
+
+[data-theme="dark"] .card,
+[data-theme="dark"] .hardware-card,
+[data-theme="dark"] .iptv-card {
+  background: var(--card-bg);
+  border-color: var(--border);
+}
+
+[data-theme="dark"] .plan-card {
+  background: var(--card-bg);
+  border-color: var(--border);
+}
+
+[data-theme="dark"] .section-alt {
+  background: var(--section-alt-bg);
+}
+
+[data-theme="dark"] .btn-outline {
+  border-color: rgba(255,255,255,0.3);
+  color: #fff;
+}
+
+[data-theme="dark"] .iptv-search-box {
+  background: var(--input-bg);
+  border-color: var(--border);
+}
+
+[data-theme="dark"] .iptv-search-input {
+  color: var(--text);
+}
+
+[data-theme="dark"] .iptv-search-results {
+  background: var(--card-bg);
+  border-color: var(--border);
+}
+
+[data-theme="dark"] .iptv-search-table tbody tr:hover {
+  background: rgba(255,255,255,0.05);
+}
+
+[data-theme="dark"] .iptv-search-table td {
+  border-color: var(--border);
+}
+
+[data-theme="dark"] .footer {
+  background: var(--footer-bg);
+}
+
+[data-theme="dark"] .nav-links a {
+  color: var(--text);
+}
+
+[data-theme="dark"] .iptv-toggle {
+  color: var(--text);
+  border-color: var(--border);
+}
+
+[data-theme="dark"] .iptv-highlights .iptv-tag {
+  background: rgba(193, 17, 17, 0.15);
+  color: var(--primary-light);
+}
+
+[data-theme="dark"] .channel-grid span {
+  background: rgba(255,255,255,0.06);
+  color: var(--text);
+}
+
+/* ===== PAGE LOADER ===== */
+.page-loader {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.page-loader.loaded {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.loader-spinner {
+  width: 44px;
+  height: 44px;
+  border: 4px solid var(--border);
+  border-top-color: var(--primary);
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* ===== SCROLL REVEAL ===== */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== DARK MODE TOGGLE ===== */
+.theme-toggle {
+  background: none;
+  border: 2px solid var(--border);
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  transition: background 0.2s, border-color 0.2s;
+  flex-shrink: 0;
+}
+
+.theme-toggle:hover {
+  background: rgba(193, 17, 17, 0.08);
+  border-color: var(--primary);
+}
+
+.theme-toggle svg {
+  width: 18px;
+  height: 18px;
+  transition: transform 0.3s ease;
+}
+
+.theme-toggle .icon-sun { display: none; }
+.theme-toggle .icon-moon { display: block; }
+
+[data-theme="dark"] .theme-toggle .icon-sun { display: block; }
+[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
 
 html {
   scroll-behavior: smooth;
@@ -78,6 +254,7 @@ ul {
   justify-content: space-between;
   padding: 0.4rem 2rem;
   min-height: 70px;
+  gap: 0.5rem;
 }
 
 .logo {
@@ -1366,6 +1543,12 @@ ul {
 
   .hamburger {
     display: flex;
+  }
+
+  .theme-toggle {
+    width: 34px;
+    height: 34px;
+    margin-left: auto;
   }
 
   .nav-links {

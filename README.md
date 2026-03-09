@@ -78,6 +78,8 @@ fibrixllp.github.io/
 ├── privacy-policy.html
 ├── terms.html
 ├── refund-policy.html
+├── manifest.json               (PWA manifest)
+├── sw.js                       (service worker)
 ├── CNAME
 ├── robots.txt
 ├── sitemap.xml
@@ -110,6 +112,9 @@ Bill payments are handled externally at **[pay.fibrixllp.org](https://pay.fibrix
 
 - **Collapsible header** — hides on scroll down, shows on scroll up (all pages, all screen sizes)
 - **Navigation** — Home, IPTV, OTT, About Us, Contact Us, Pay Bill (IPTV & OTT link to homepage anchors from other pages)
+- **Dark mode** — moon/sun toggle in header, persisted via localStorage, respects `prefers-color-scheme`
+- **Page loader** — spinner overlay that fades out on page load
+- **Scroll reveal** — sections animate in as they enter the viewport (IntersectionObserver)
 - **Plan duration tabs** — pill-style Monthly / Quarterly / Half-Yearly / Yearly switcher
 - **OTT platform tabs** — Premium / Prime Plus toggle with text-only grid
 - **IPTV expandable cards** — "View Channel List" button reveals categorised channel grid per package
@@ -117,6 +122,7 @@ Bill payments are handled externally at **[pay.fibrixllp.org](https://pay.fibrix
 - **Hardware list cards** — numbered cards with red accent border, no images
 - **WhatsApp integration** — floating chat button on all pages
 - **Mobile-first responsive** — hamburger nav, stacked grids, optimised touch targets
+- **PWA installable** — manifest.json + service worker for offline caching and Add to Home Screen
 
 ## Hosting & Deployment
 
@@ -165,6 +171,7 @@ www -> shourjo-h.github.io
 - Google Fonts (Inter, weights 400–800)
 - GitHub Pages hosting
 - Google Forms backend for contact form
+- PWA (Progressive Web App) with service worker (`sw.js`) and `manifest.json`
 
 ## Team
 
