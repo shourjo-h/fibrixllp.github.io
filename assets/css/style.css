@@ -51,15 +51,17 @@
 
 /* -- Header -- */
 [data-theme="dark"] .header {
-  background: transparent;
-  box-shadow: none;
-  border-bottom: none;
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
 }
 
 [data-theme="dark"] .header.header-scrolled {
-  background: var(--bg);
-  box-shadow: none;
-  border-bottom: none;
+  background: rgba(18, 18, 24, 0.95) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: none !important;
+  border: none !important;
 }
 
 [data-theme="dark"] .hamburger span {
