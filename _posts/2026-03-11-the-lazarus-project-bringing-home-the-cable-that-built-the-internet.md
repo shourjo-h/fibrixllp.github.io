@@ -7,6 +7,7 @@ tags:
   - technology
   - fiberoptic
   - internet
+  - broadband
 description: The "Lazarus Project" explores the historic recovery of TAT-8, the world’s first transatlantic fiber-optic cable, as it’s pulled from the ocean floor for recycling after decades of digital service.
 image: /assets/images/blog/72677.png
 ---
