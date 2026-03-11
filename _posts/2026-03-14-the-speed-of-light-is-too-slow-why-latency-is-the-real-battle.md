@@ -1,6 +1,6 @@
 ---
 title: 'The Speed of Light Is Too Slow: Why Latency Is the Real Battle'
-date: 2026-03-14
+date: 2026-02-04
 author: shourjo
 category: Technology
 tags:
