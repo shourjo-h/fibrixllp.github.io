@@ -6,6 +6,9 @@ baseurl: ""
 markdown: kramdown
 permalink: /blog/:title/
 
+include:
+  - admin
+
 defaults:
   - scope:
       path: ""
