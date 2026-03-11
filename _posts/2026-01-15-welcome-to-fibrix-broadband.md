@@ -1,11 +1,14 @@
 ---
-title: "Welcome to Fibrix Broadband"
+title: Welcome to Fibrix Broadband
 date: 2026-01-15
 author: shourjo
 category: Company
-tags: [announcement, broadband, fibrix]
-description: "Introducing Fibrix Broadband — your new high-speed fiber internet provider in South 24 Parganas, West Bengal."
-image: ""
+tags:
+  - announcement
+  - broadband
+  - fibrix
+description: Introducing Fibrix Broadband — your new high-speed fiber internet provider in South 24 Parganas, West Bengal.
+image: /assets/images/blog/Fibrix Logo Style 1.png
 ---
 
 We're thrilled to officially welcome you to **Fibrix Broadband** — your trusted high-speed fiber internet provider, right here in South 24 Parganas, West Bengal.
@@ -18,7 +21,7 @@ Fibrix Broadband is the consumer-facing brand of **Fibrix LLP**, a registered Li
 
 We believe everyone deserves access to fast, reliable internet — regardless of where they live. Whether you're in the heart of a town or a quiet village, Fibrix Broadband is committed to bridging the digital divide.
 
-Our tagline says it all: *"The best available out there."*
+Our tagline says it all: _"The best available out there."_
 
 ## What We Offer
 
