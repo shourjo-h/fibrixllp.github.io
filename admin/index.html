@@ -9,10 +9,14 @@ permalink: /admin/index.html
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex, nofollow">
   <title>Content Manager — Fibrix Broadband</title>
-  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+</head>
+<body>
+  <script src="https://unpkg.com/decap-cms-app@^3.0.0/dist/decap-cms-app.js"></script>
   <script>
+    const CMS = window.CMS;
     CMS.init({
       config: {
+        load_config_file: false,
         backend: {
           name: "github",
           repo: "shourjo-h/fibrixllp.github.io",
@@ -60,7 +64,5 @@ permalink: /admin/index.html
       }
     });
   </script>
-</head>
-<body>
 </body>
 </html>
