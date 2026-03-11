@@ -1,6 +1,6 @@
 ---
 title: "From Copper to Glass: India's Silent Broadband Revolution"
-date: 2026-03-13
+date: 2026-02-24
 author: shourjo
 category: Technology
 tags:
@@ -9,7 +9,7 @@ tags:
   - fiberoptic
   - india
 description: The story of India's massive transition from copper telephone lines to fiber-to-the-home — BharatNet, 5G backhaul, and what 100 Mbps to every village actually means.
-image: ""
+image: ''
 ---
 
 There's a quiet revolution happening under India's streets, and most people don't even know it's there.
@@ -44,8 +44,8 @@ The goal was staggering: connect all **250,000+ gram panchayats** (village-level
 ### The Numbers
 
 - **Target:** 250,000+ gram panchayats
-- **Fiber laid (as of 2025):** ~600,000+ km
-- **Gram panchayats connected:** ~200,000
+- **Fiber laid (as of 2025):** \~600,000+ km
+- **Gram panchayats connected:** \~200,000
 - **Investment:** Over ₹40,000 crore ($5+ billion)
 
 The execution has been uneven. Some states — **Kerala, Karnataka, Tamil Nadu** — moved fast, leveraging existing infrastructure and state-level fiber networks. Others — particularly in the northeast and hilly regions — faced terrain challenges that made laying fiber extraordinarily difficult.
