@@ -47,9 +47,7 @@ This is the "circular economy" in its purest form—taking the infrastructure of
 Clearing the "Zombie" Lanes
 There is another reason for this mission: the seabed is crowded. By removing TAT-8, we are clearing the "highway" for next-gen systems like Meta’s Project Waterworth.
 While TAT-8 was a miracle for its 280 Mbps capacity, Project Waterworth will handle hundreds of Terabits per second. However, Waterworth wouldn't exist without the lessons learned from TAT-8—including how to protect cables from the famous (and slightly exaggerated) "shark bites" that the original engineers feared so much.
-
-> Visual Brief for Junaid [3]: A close-up "studio" style shot of a section of the recovered cable. One end is frayed, revealing the internal glass fibers, the copper conductor, and the steel armoring. The texture should show the wear and tear of 40 years under crushing pressure.
-> >
-> The Final Pulse
-> When Isaac Asimov made the first call on TAT-8, he was speaking into the future. Today, as we watch the last kilometers of that glass heart being winched out of the water, we aren't just looking at scrap metal. We are looking at the skeleton of the first bridge that truly connected us all.
-> The Lazarus Project reminds us that even in a world of "clouds" and "wireless" signals, the internet is—and always will be—made of glass, steel, and the grit of the people who maintain it.
+>
+The Final Pulse
+When Isaac Asimov made the first call on TAT-8, he was speaking into the future. Today, as we watch the last kilometers of that glass heart being winched out of the water, we aren't just looking at scrap metal. We are looking at the skeleton of the first bridge that truly connected us all.
+The Lazarus Project reminds us that even in a world of "clouds" and "wireless" signals, the internet is—and always will be—made of glass, steel, and the grit of the people who maintain it.
