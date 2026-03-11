@@ -1,3 +1,7 @@
+---
+layout: null
+permalink: /admin/index.html
+---
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,8 +9,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex, nofollow">
   <title>Content Manager — Fibrix Broadband</title>
+  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+  <script>
+    CMS.init({
+      config: {
+        backend: {
+          name: "github",
+          repo: "shourjo-h/fibrixllp.github.io",
+          branch: "main",
+          auth_type: "pkce",
+          app_id: "Ov23lipDGL670lVhXps3"
+        },
+        media_folder: "assets/images/blog",
+        public_folder: "/assets/images/blog",
+        collections: [
+          {
+            name: "authors",
+            label: "Authors",
+            folder: "_data/authors",
+            create: true,
+            extension: "yml",
+            format: "yaml",
+            slug: "{{slug}}",
+            identifier_field: "name",
+            fields: [
+              { label: "Name", name: "name", widget: "string" },
+              { label: "Role", name: "role", widget: "string" },
+              { label: "Avatar", name: "avatar", widget: "image", required: false },
+              { label: "Bio", name: "bio", widget: "text", required: false }
+            ]
+          },
+          {
+            name: "posts",
+            label: "Blog Posts",
+            folder: "_posts",
+            create: true,
+            slug: "{{year}}-{{month}}-{{day}}-{{slug}}",
+            fields: [
+              { label: "Title", name: "title", widget: "string" },
+              { label: "Publish Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false },
+              { label: "Author", name: "author", widget: "relation", collection: "authors", search_fields: ["name"], value_field: "{{slug}}", display_fields: ["name"] },
+              { label: "Category", name: "category", widget: "select", options: ["Company", "Guide", "Technology", "News", "Tips"] },
+              { label: "Tags", name: "tags", widget: "list", allow_add: true },
+              { label: "Description", name: "description", widget: "text" },
+              { label: "Featured Image", name: "image", widget: "image", required: false },
+              { label: "Body", name: "body", widget: "markdown" }
+            ]
+          }
+        ]
+      }
+    });
+  </script>
 </head>
 <body>
-  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
 </body>
 </html>
