@@ -8,7 +8,9 @@ Official website for **[fibrixllp.org](https://fibrixllp.org)** - Fibrix Broadba
 
 | Page | File | Description |
 |------|------|-------------|
-| Home | `index.html` | Hero, services, broadband plans (4 duration tabs), OTT platforms, IPTV packages, hardware catalog, CTA |
+| Home | `index.html` | Hero, services, broadband plans (4 duration tabs), hardware catalog, CTA |
+| OTT Bundles | `ott.html` | All OTT streaming bundles, platforms, pricing, FAQs |
+| IPTV Plans | `iptv.html` | IPTV channel packages, pricing, device compatibility, setup |
 | About Us | `about.html` | Company info, team, mission ("Internet for All"), vision, values |
 | Contact Us | `contact.html` | Contact form (Google Form integration) & company details |
 | Privacy Policy | `privacy-policy.html` | Data collection, usage, and privacy practices |
@@ -64,6 +66,7 @@ Listed as a catalog (no e-commerce): Routers & Switches, ONU/ONT Devices, GPON/E
 
 ## Project Structure
 
+
 ```
 fibrixllp.github.io/
 ├── _config.yml                 (Jekyll configuration)
@@ -100,6 +103,8 @@ fibrixllp.github.io/
 ├── data/
 │   └── iptvchannel.csv         (IPTV channel data source)
 ├── index.html
+├── ott.html                    (OTT bundles page)
+├── iptv.html                   (IPTV plans page)
 ├── about.html
 ├── contact.html
 ├── blog.html                   (Liquid loop for post cards)
