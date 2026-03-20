@@ -401,133 +401,20 @@ include_jsonld: true
     </div>
   </div>
 </section>
-<!-- IPTV PACKAGES -->
+<!-- IPTV TEASER -->
 <section class="section section-alt reveal" id="iptv">
   <div class="container">
     <h2 class="section-title">IPTV <span>Packages</span></h2>
-    <p class="section-subtitle">Premium HD channels delivered over fiber &mdash; available in Hindi, Marathi, Gujarati &amp; Bangla</p>
-
-    <div class="iptv-search-wrap">
-      <div class="iptv-search-box">
-        <svg class="iptv-search-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-        <input type="text" id="iptvSearch" class="iptv-search-input" placeholder="Search for a channel (e.g., Star Plus, Discovery)..." oninput="searchChannels(this.value)" autocomplete="off">
-        <button class="iptv-search-clear" id="iptvSearchClear" onclick="clearChannelSearch()" style="display:none;">&times;</button>
-      </div>
-      <div id="iptvSearchResults" class="iptv-search-results" style="display:none;"></div>
-    </div>
-
-    <div class="iptv-grid">
-      <!-- HD -->
-      <div class="iptv-card">
-        <div class="iptv-card-header"><h3>HD</h3><div class="iptv-price">&#8377;90 <span>/mo</span></div><div class="iptv-count">49 Channels</div></div>
-        <div class="iptv-highlights"><span class="iptv-tag">Entertainment</span><span class="iptv-tag">Movies</span><span class="iptv-tag">Sports</span><span class="iptv-tag">Kids</span><span class="iptv-tag">News</span></div>
-        <button class="iptv-toggle" onclick="toggleChannelList(this)">View Channel List &#9662;</button>
-        <div class="iptv-channels" style="display:none;">
-          <h5 class="channel-cat">Bengali Entertainment &amp; Movies</h5>
-          <div class="channel-grid"><span>Star Jalsha HD</span><span>Colors Bangla HD</span><span>Jalsha Movies HD</span><span>Colors Bangla Cinema</span></div>
-          <h5 class="channel-cat">Hindi Entertainment</h5>
-          <div class="channel-grid"><span>Colors HD</span><span>Star Bharat HD</span><span>Star Plus HD</span><span>Star Utsav</span><span>Colors Rishtey</span><span>Sony Pal</span><span>Zee Anmol</span><span>Big Magic</span></div>
-          <h5 class="channel-cat">Movies</h5>
-          <div class="channel-grid"><span>Star Gold HD</span><span>Star Gold 2 HD</span><span>Star Gold Romance</span><span>Star Gold Thrills</span><span>Colors Cineplex HD</span><span>Star Utsav Movies</span><span>Colors Cineplex Bollywood</span><span>Colors Cineplex Superhits</span><span>Zee Anmol Cinema</span><span>Zee Anmol Cinema 2</span><span>Action Cinema</span></div>
-          <h5 class="channel-cat">Kids</h5>
-          <div class="channel-grid"><span>Disney Channel HD</span><span>Disney Junior</span><span>Super Hungama</span><span>Nick HD+</span><span>Nick</span><span>Nick Jr</span><span>Hungama TV</span><span>Sonic</span></div>
-          <h5 class="channel-cat">Sports</h5>
-          <div class="channel-grid"><span>Star Sports 1 HD Hindi</span><span>Star Sports 2 Hindi HD</span><span>Star Sports 3</span><span>Star Sports Khel</span></div>
-          <h5 class="channel-cat">Infotainment &amp; Lifestyle</h5>
-          <div class="channel-grid"><span>National Geographic HD</span><span>Nat Geo Wild HD</span><span>History TV18 HD</span><span>Good Times</span></div>
-          <h5 class="channel-cat">Music</h5>
-          <div class="channel-grid"><span>Sony Wah</span></div>
-          <h5 class="channel-cat">News &amp; Business</h5>
-          <div class="channel-grid"><span>News18 Bangla</span><span>Zee 24 Ghanta</span><span>NDTV 24x7</span><span>News18 India</span><span>ZEE News</span><span>ZEE Hindustan</span><span>CNBC TV18</span><span>Zee Business</span><span>NDTV Profit</span></div>
-        </div>
-      </div>
-
-      <!-- HD+ -->
-      <div class="iptv-card">
-        <div class="iptv-card-header"><h3>HD+</h3><div class="iptv-price">&#8377;120 <span>/mo</span></div><div class="iptv-count">56 Channels</div></div>
-        <div class="iptv-highlights"><span class="iptv-tag">Entertainment</span><span class="iptv-tag">HD Movies</span><span class="iptv-tag">HD Sports</span><span class="iptv-tag">Kids</span><span class="iptv-tag">News</span></div>
-        <button class="iptv-toggle" onclick="toggleChannelList(this)">View Channel List &#9662;</button>
-        <div class="iptv-channels" style="display:none;">
-          <h5 class="channel-cat">Bengali Entertainment &amp; Movies</h5>
-          <div class="channel-grid"><span>Star Jalsha HD</span><span>Colors Bangla HD</span><span>Jalsha Movies HD</span><span>Colors Bangla Cinema</span></div>
-          <h5 class="channel-cat">Hindi &amp; English Entertainment</h5>
-          <div class="channel-grid"><span>Colors HD</span><span>Star Bharat HD</span><span>Star Plus HD</span><span>Colors Infinity HD</span><span>Star Utsav</span><span>Colors Rishtey</span><span>Sony Pal</span><span>Zee Anmol</span><span>Big Magic</span></div>
-          <h5 class="channel-cat">Movies</h5>
-          <div class="channel-grid"><span>Star Gold HD</span><span>Star Gold 2 HD</span><span>Star Gold Romance</span><span>Star Gold Thrills</span><span>Star Gold Select HD</span><span>Star Movies HD</span><span>Star Movies Select HD</span><span>Colors Cineplex HD</span><span>Star Utsav Movies</span><span>Colors Cineplex Bollywood</span><span>Colors Cineplex Superhits</span><span>Zee Anmol Cinema</span><span>Zee Anmol Cinema 2</span><span>Action Cinema</span></div>
-          <h5 class="channel-cat">Kids</h5>
-          <div class="channel-grid"><span>Disney Channel HD</span><span>Disney Junior</span><span>Super Hungama</span><span>Nick HD+</span><span>Nick</span><span>Nick Jr</span><span>Hungama TV</span><span>Sonic</span></div>
-          <h5 class="channel-cat">Sports</h5>
-          <div class="channel-grid"><span>Star Sports 1 HD Hindi</span><span>Star Sports 2 Hindi HD</span><span>Star Sports 3</span><span>Star Sports Khel</span><span>Star Sports HD1</span></div>
-          <h5 class="channel-cat">Infotainment &amp; Lifestyle</h5>
-          <div class="channel-grid"><span>National Geographic HD</span><span>Nat Geo Wild HD</span><span>History TV18 HD</span><span>Good Times</span></div>
-          <h5 class="channel-cat">Music</h5>
-          <div class="channel-grid"><span>MTV HD</span><span>Sony Wah</span></div>
-          <h5 class="channel-cat">News &amp; Business</h5>
-          <div class="channel-grid"><span>News18 Bangla</span><span>Zee 24 Ghanta</span><span>NDTV 24x7</span><span>News18 India</span><span>ZEE News</span><span>ZEE Hindustan</span><span>CNBC TV18</span><span>Zee Business</span><span>NDTV Profit</span></div>
-        </div>
-      </div>
-
-      <!-- ACE HD -->
-      <div class="iptv-card">
-        <div class="iptv-card-header"><h3>ACE HD</h3><div class="iptv-price">&#8377;150 <span>/mo</span></div><div class="iptv-count">74 Channels</div></div>
-        <div class="iptv-highlights"><span class="iptv-tag">Entertainment</span><span class="iptv-tag">Premium Movies</span><span class="iptv-tag">Sports</span><span class="iptv-tag">Kids</span><span class="iptv-tag">Infotainment</span><span class="iptv-tag">News</span></div>
-        <button class="iptv-toggle" onclick="toggleChannelList(this)">View Channel List &#9662;</button>
-        <div class="iptv-channels" style="display:none;">
-          <h5 class="channel-cat">Bengali Entertainment &amp; Movies</h5>
-          <div class="channel-grid"><span>Star Jalsha HD</span><span>Colors Bangla HD</span><span>Zee Bangla HD</span><span>Sony Aath</span><span>Jalsha Movies HD</span><span>Colors Bangla Cinema</span><span>Zee Bangla Cinema</span></div>
-          <h5 class="channel-cat">Hindi Entertainment</h5>
-          <div class="channel-grid"><span>Colors HD</span><span>Star Bharat HD</span><span>Star Plus HD</span><span>Sony TV HD</span><span>Sony Sab HD</span><span>Zee TV HD</span><span>&amp;TV HD</span><span>Star Utsav</span><span>Colors Rishtey</span><span>Sony Pal</span><span>Zee Anmol</span><span>Big Magic</span></div>
-          <h5 class="channel-cat">English Entertainment &amp; Movies</h5>
-          <div class="channel-grid"><span>Zee Cafe HD</span><span>&amp;Prive HD</span><span>&amp;Flix HD</span></div>
-          <h5 class="channel-cat">Movies</h5>
-          <div class="channel-grid"><span>Star Gold HD</span><span>Star Gold 2 HD</span><span>Star Gold Romance</span><span>Star Gold Thrills</span><span>Colors Cineplex HD</span><span>Zee Cinema HD</span><span>&amp;Pictures HD</span><span>Sony Max HD</span><span>Sony Max 1</span><span>Sony Max 2</span><span>Star Utsav Movies</span><span>Colors Cineplex Bollywood</span><span>Colors Cineplex Superhits</span><span>Zee Anmol Cinema</span><span>Zee Anmol Cinema 2</span><span>Action Cinema</span></div>
-          <h5 class="channel-cat">Kids</h5>
-          <div class="channel-grid"><span>Nick HD+</span><span>Nick</span><span>Nick Jr</span><span>Hungama TV</span><span>Sonic</span><span>Pogo</span><span>Cartoon Network</span><span>Discovery Kids</span><span>Sony Yay!</span></div>
-          <h5 class="channel-cat">Sports</h5>
-          <div class="channel-grid"><span>Star Sports 1 HD Hindi</span><span>Star Sports 2 Hindi HD</span><span>Star Sports 3</span><span>Star Sports Khel</span><span>Sony Sports Ten 3 HD</span><span>Euro Sports</span></div>
-          <h5 class="channel-cat">Infotainment &amp; Lifestyle</h5>
-          <div class="channel-grid"><span>National Geographic HD</span><span>Nat Geo Wild HD</span><span>History TV18 HD</span><span>Discovery HD</span><span>Animal Planet</span><span>Discovery Turbo</span><span>Discovery Science</span><span>Investigation Discovery</span><span>Sony BBC Earth HD</span><span>Zee Zest HD</span><span>Good Times</span></div>
-          <h5 class="channel-cat">Music</h5>
-          <div class="channel-grid"><span>Zing</span><span>Sony Wah</span></div>
-          <h5 class="channel-cat">News &amp; Business</h5>
-          <div class="channel-grid"><span>News18 Bangla</span><span>Zee 24 Ghanta</span><span>NDTV 24x7</span><span>News18 India</span><span>ZEE News</span><span>ZEE Hindustan</span><span>CNBC TV18</span><span>Zee Business</span><span>NDTV Profit</span></div>
-        </div>
-      </div>
-
-      <!-- AXEL HD -->
-      <div class="iptv-card iptv-popular">
-        <div class="iptv-badge">Popular</div>
-        <div class="iptv-card-header"><h3>AXEL HD</h3><div class="iptv-price">&#8377;200 <span>/mo</span></div><div class="iptv-count">95 Channels</div></div>
-        <div class="iptv-highlights"><span class="iptv-tag">All Entertainment</span><span class="iptv-tag">Premium Movies</span><span class="iptv-tag">All Sports</span><span class="iptv-tag">Kids</span><span class="iptv-tag">Infotainment</span><span class="iptv-tag">News</span><span class="iptv-tag">Regional</span></div>
-        <button class="iptv-toggle" onclick="toggleChannelList(this)">View Channel List &#9662;</button>
-        <div class="iptv-channels" style="display:none;">
-          <h5 class="channel-cat">Bengali Entertainment &amp; Movies</h5>
-          <div class="channel-grid"><span>Star Jalsha HD</span><span>Colors Bangla HD</span><span>Zee Bangla HD</span><span>Sony Aath</span><span>Jalsha Movies HD</span><span>Colors Bangla Cinema</span><span>Zee Bangla Cinema</span></div>
-          <h5 class="channel-cat">Hindi Entertainment</h5>
-          <div class="channel-grid"><span>Colors HD</span><span>Star Bharat HD</span><span>Star Plus HD</span><span>Sony TV HD</span><span>Sony Sab HD</span><span>Zee TV HD</span><span>&amp;TV HD</span><span>Star Utsav</span><span>Colors Rishtey</span><span>Sony Pal</span><span>Zee Anmol</span><span>Big Magic</span></div>
-          <h5 class="channel-cat">English Entertainment &amp; Movies</h5>
-          <div class="channel-grid"><span>Colors Infinity HD</span><span>Disney International HD</span><span>Zee Cafe HD</span><span>Star Movies HD</span><span>Star Movies Select HD</span><span>&amp;Prive HD</span><span>&amp;Flix HD</span><span>Sony Pix HD</span></div>
-          <h5 class="channel-cat">Movies</h5>
-          <div class="channel-grid"><span>Star Gold HD</span><span>Star Gold 2 HD</span><span>Star Gold Romance</span><span>Star Gold Thrills</span><span>Star Gold Select HD</span><span>Colors Cineplex HD</span><span>Zee Cinema HD</span><span>&amp;Pictures HD</span><span>Sony Max HD</span><span>Sony Max 1</span><span>Sony Max 2</span><span>Star Utsav Movies</span><span>Colors Cineplex Bollywood</span><span>Colors Cineplex Superhits</span><span>Zee Anmol Cinema</span><span>Zee Anmol Cinema 2</span><span>Action Cinema</span></div>
-          <h5 class="channel-cat">Kids</h5>
-          <div class="channel-grid"><span>Disney Channel HD</span><span>Disney Junior</span><span>Super Hungama</span><span>Nick HD+</span><span>Nick</span><span>Nick Jr</span><span>Hungama TV</span><span>Sonic</span><span>Pogo</span><span>Cartoon Network</span><span>Discovery Kids</span><span>Sony Yay!</span></div>
-          <h5 class="channel-cat">Sports</h5>
-          <div class="channel-grid"><span>Star Sports 1 HD Hindi</span><span>Star Sports 2 Hindi HD</span><span>Star Sports 3</span><span>Star Sports Khel</span><span>Star Sports HD1</span><span>Sony Sports Ten 1 HD</span><span>Sony Sports Ten 2 HD</span><span>Sony Sports Ten 3 HD</span><span>Sony Sports Ten 5 HD</span><span>Euro Sports</span></div>
-          <h5 class="channel-cat">Infotainment &amp; Lifestyle</h5>
-          <div class="channel-grid"><span>National Geographic HD</span><span>Nat Geo Wild HD</span><span>History TV18 HD</span><span>Discovery HD</span><span>Animal Planet</span><span>Discovery Turbo</span><span>Discovery Science</span><span>Investigation Discovery</span><span>Sony BBC Earth HD</span><span>Zee Zest HD</span><span>Epic TV</span><span>Good Times</span></div>
-          <h5 class="channel-cat">Music</h5>
-          <div class="channel-grid"><span>MTV HD</span><span>Zing</span><span>Showbox</span><span>Sony Wah</span></div>
-          <h5 class="channel-cat">News &amp; Business</h5>
-          <div class="channel-grid"><span>News18 Bangla</span><span>Zee 24 Ghanta</span><span>NDTV 24x7</span><span>News18 India</span><span>ZEE News</span><span>ZEE Hindustan</span><span>CNBC TV18</span><span>Zee Business</span><span>NDTV Profit</span></div>
-          <h5 class="channel-cat">Regional &amp; Educational</h5>
-          <div class="channel-grid"><span>Star Kiran</span><span>Zee Sarthak</span><span>Etv Balbharat</span></div>
-        </div>
-      </div>
-    </div>
-
-    <p class="iptv-note">* Each package available in 4 regional variants: Hindi, Marathi, Gujarati &amp; Bangla. Channel lineup shown is for the Bangla variant; other variants may differ slightly. Prices include GST.</p>
-    <div style="text-align:center; margin-top: 1.5rem;">
-      <a href="/contact.html" class="btn btn-primary">Subscribe to IPTV</a>
+    <p class="section-subtitle">Premium HD channels delivered over fiber. Hindi, Marathi, Gujarati &amp; Bangla variants available.</p>
+    <div class="iptv-teaser">
+      <ul class="iptv-teaser-list">
+        <li><strong>HD:</strong> 49 channels, ₹90/mo</li>
+        <li><strong>HD+:</strong> 56 channels, ₹120/mo</li>
+        <li><strong>ACE HD:</strong> 74 channels, ₹150/mo</li>
+        <li><strong>AXEL HD:</strong> 95 channels, ₹200/mo</li>
+      </ul>
+      <p style="margin-top:1rem;">See full channel list, search, and compare all packs:</p>
+      <a href="/iptv.html" class="btn btn-primary">See All IPTV Plans</a>
     </div>
   </div>
 </section>
