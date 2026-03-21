@@ -1,6 +1,6 @@
 ---
-title: "The 8,000-Meter Deep Internet: How Submarine Cables Actually Get Built"
-date: 2026-03-15
+title: 'The 8,000-Meter Deep Internet: How Submarine Cables Actually Get Built'
+date: 2026-03-21
 author: shourjo
 category: Technology
 tags:
@@ -9,7 +9,7 @@ tags:
   - fiberoptic
   - infrastructure
 description: 95% of international data travels through cables thinner than a garden hose on the ocean floor. Inside the world of cable ships, deep-sea plows, and the engineers who connect continents.
-image: ""
+image: /assets/images/blog/undersea-cable3.webp
 ---
 
 Right now, as you read this, **95% of all intercontinental internet traffic** is flowing through cables sitting on the bottom of the ocean. Not through satellites. Not through radio waves. Through glass fibers thinner than a human hair, encased in a cable the width of a garden hose, resting on the seabed up to **8,000 meters below the surface**.
@@ -35,8 +35,8 @@ From the inside out:
 
 | Feature | Typical Specification |
 | --- | --- |
-| Deep-water diameter | ~17 mm (garden hose) |
-| Shallow-water diameter | ~50 mm (with armor) |
+| Deep-water diameter | \~17 mm (garden hose) |
+| Shallow-water diameter | \~50 mm (with armor) |
 | Weight | 1.4 tonnes/km (deep) to 10+ tonnes/km (armored) |
 | Fiber pairs | 8–24 |
 | Capacity per pair | 20+ Tbps (modern systems) |
