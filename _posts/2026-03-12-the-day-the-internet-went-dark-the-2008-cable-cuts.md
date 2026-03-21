@@ -31,7 +31,6 @@ This wasn't just about not being able to browse YouTube. Stock exchanges slowed.
 
 ### The Damage at a Glance
 
-
 | Country/Region | Internet Capacity Lost |
 | --- | --- |
 | Egypt | 70% |
